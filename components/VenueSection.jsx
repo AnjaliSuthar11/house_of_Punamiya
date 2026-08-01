@@ -103,7 +103,7 @@ export default function VenueSection() {
     {/* Right Image */}
     <div className="flex justify-center  p-8 rounded-xl">
       <img
-        src="/assets/Punamiya/location-1.png"
+        src="/location-1.png"
         alt="Venue Map"
         className="w-full h-full rounded-2xl"
        
