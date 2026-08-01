@@ -42,11 +42,11 @@ useEffect(() => {
 }
   return (
    
-    <div className={`flex h-screen justify-center items-center md:p-10 bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
+    <div className={`flex h-screen justify-center items-center  bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
    
        {/* Main Content */}
       <div
-        className={` flex flex-col justify-center gap-5 items-center px-6 py-6 transition-all duration-1000 ${
+        className={` flex flex-col justify-center gap-5 items-center transition-all duration-1000 ${
           clicked
             ? "opacity-0 scale-110 blur-xl"
             : "opacity-100"
