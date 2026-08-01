@@ -1,7 +1,7 @@
 export default function SectionHeading({ kicker, title }) {
   return (
-    <header className="reveal text-center">
-      <p className=" text-[0.6rem] tracking-[0.55em]  uppercase font-bold sm:text-xs"
+    <header className="reveal text-center pt-20">
+      <p className="tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
       style={{
             color: "#8D440D",
             fontFamily: "Cormorant Garamond, serif",

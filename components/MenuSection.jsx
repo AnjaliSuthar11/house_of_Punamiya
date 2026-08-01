@@ -10,29 +10,30 @@ export default function MenuSection() {
   return (
     <section
       id="menu"
-      className=" py-20 "
+      className=" md:py-40 "
     >
       {/* Heading */}
       <div className="text-center">
         <p
-          className="uppercase tracking-[0.5em] text-sm text-[#8D440D]"
+          className="uppercase tracking-[0.5em] text-lg text-[#8D440D]"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
           Culinary Experience
         </p>
 
         <h2
-          className="mt-3 text-4xl md:text-5xl uppercase text-[#8D440D]"
+          className="mt-3 text-2xl md:text-3xl uppercase text-[#8D440D]"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
-          Our Menu
+         An Afternoon Curated for the Inner Circle
+
         </h2>
 
-        <div className="flex items-center justify-center gap-4 mt-2">
-          <div className="w-24 h-px bg-[#8D440D]/30"></div>
-          <span className="text-[#8D440D] text-lg">❦</span>
-          <div className="w-24 h-px bg-[#8D440D]/30"></div>
-        </div>
+       <div className="flex items-center justify-center gap-3 pt-2">
+  <div className="h-px w-20 bg-[#8D440D]" />
+  <span className="text-[#8D440D] text-xl">✦</span>
+  <div className="h-px w-20 bg-[#8D440D]" />
+</div>
       </div>
 
       {/* Menu Images */}

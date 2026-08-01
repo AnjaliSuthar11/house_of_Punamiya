@@ -7,6 +7,7 @@ const ScreenTwo = () => {
 const [showVideo, setShowVideo] = useState(false);
 const [showScreenThree, setShowScreenThree] = useState(false);
 const [fadeVideo, setFadeVideo] = useState(false);
+const [showScrollButton, setShowScrollButton] = useState(false);
 useEffect(() => {
   if (!clicked) return;
 
@@ -15,21 +16,13 @@ useEffect(() => {
     setShowVideo(true);
   }, 400);
 
-  // Start fading the video after 5 seconds
-  const fadeTimer = setTimeout(() => {
-    setFadeVideo(true);
-  }, 10000);//6200
+ 
 
-  // Show ScreenThree after fade animation
-  const screenTimer = setTimeout(() => {
-    setShowVideo(false);
-    setShowScreenThree(true);
-  }, 11000);//7000
+  
 
   return () => {
     clearTimeout(showVideoTimer);
-    clearTimeout(fadeTimer);
-    clearTimeout(screenTimer);
+   
   };
 }, [clicked]);
 
@@ -42,7 +35,7 @@ useEffect(() => {
 }
   return (
    
-    <div className={`flex py-18 justify-center items-center  bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
+    <div className={`flex py-18 h-screen justify-center items-center  bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
    
        {/* Main Content */}
       <div
@@ -102,20 +95,56 @@ useEffect(() => {
       
       </div>
        {/* Video */}
-      {showVideo && (
+     {showVideo && (
   <div
-    className={`fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-700 ${
-      fadeVideo ? "opacity-0" : "opacity-100"
-    }`}
-  >
+  className={`fixed inset-0 z-50 flex items-center justify-center  transition-opacity duration-700 ${
+    fadeVideo ? "opacity-0" : "opacity-100"
+  }`}
+>
     <video
       autoPlay
       muted
       playsInline
       className="w-full h-full object-contain"
+      onEnded={() => {
+        setShowScrollButton(true);
+      }}
     >
       <source src="/video.mp4" type="video/mp4" />
     </video>
+
+    {showScrollButton && (
+      <button
+        onClick={() => {
+          setFadeVideo(true);
+
+          setTimeout(() => {
+            setShowVideo(false);
+            setShowScreenThree(true);
+          }, 700);
+        }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white animate-bounce"
+      >
+        <span className="text-xs tracking-[0.4em] uppercase mb-2">
+          Scroll
+        </span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-8 h-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={1.5}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M12 5v14m0 0l-5-5m5 5l5-5"
+          />
+        </svg>
+      </button>
+    )}
   </div>
 )}
 {showScreenThree && (

@@ -1,4 +1,4 @@
-import { greatVibes } from "@/font";
+import { ballet, greatVibes } from "@/font";
 
 
 export default function ThankYouSection() {
@@ -6,28 +6,70 @@ export default function ThankYouSection() {
     <footer className="relative overflow-hidden px-6 py-24 ">
 
       {/* Background Glow */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div className="w-[450px] h-[450px] rounded-full bg-[#D6B06A]/20 blur-[120px]" />
-      </div>
+     
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
 
 
         {/* Heading */}
        
-   <h2
-  className={`${greatVibes.className} mt-8 text-4xl md:text-5xl text-[#8D440D] `}
->
-  
-The finest moments are never rushed. They're shared.
-</h2>
+ <div className="flex flex-col items-center justify-center text-center py-20 px-6">
+
+  {/* Top Quote */}
+
+
+    <div className="mt-10 flex items-center justify-center gap-4">
+    <div className="w-24 h-px bg-[#8D440D]/40"></div>
+
+ <div
+    className="text-7xl leading-none text-[#8D440D] opacity-80"
+    style={{ fontFamily: "Cormorant Garamond, serif" }}
+  >
+    “
+  </div>
+
+    <div className="w-24 h-px bg-[#8D440D]/40"></div>
+  </div>
+
+  {/* Quote Text */}
+  <h2
+    className={`${ballet.className} mt-2 text-4xl md:text-6xl text-[#8D440D] leading-relaxed font-bold max-w-3xl`} style={{
+    color: "#8D440D",
+    textShadow: `
+      0.4px 0 #8D440D,
+      -0.4px 0 #8D440D,
+      0 0.4px #8D440D,
+      0 -0.4px #8D440D
+    `,
+  }}
+  >
+    The finest moments are never rushed.
+    <br />
+    They're shared.
+  </h2>
+
+  {/* Bottom Decoration */}
+  <div className="mt-10 flex items-center justify-center gap-4">
+    <div className="w-24 h-px bg-[#8D440D]/40"></div>
+
+    <span
+      className="text-5xl leading-none text-[#8D440D]"
+      style={{ fontFamily: "Cormorant Garamond, serif" }}
+    >
+      ”
+    </span>
+
+    <div className="w-24 h-px bg-[#8D440D]/40"></div>
+  </div>
+
+</div>
 
   {/* Bottom Divider */}
-        <div className="flex items-center justify-center gap-4 py-10">
+        {/* <div className="flex items-center justify-center gap-4 py-10">
           <div className="w-24 h-px bg-[#8D440D]/30"></div>
           <span className="text-[#8D440D] text-lg">❦</span>
           <div className="w-24 h-px bg-[#8D440D]/30"></div>
-        </div>
+        </div> */}
  
   {/* Logo */}
         <img

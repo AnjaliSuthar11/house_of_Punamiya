@@ -10,7 +10,7 @@ import InvitationThree from './InvitationThree'
 const ScreenThree = () => {
   return (
    <div
-  className="relative bg-[url('/Background01_compressed.png')] bg-cover bg-center bg-no-repeat"
+  className="relative bg-[url('/mobile_bg(1).png')] bg-cover  bg-no-repeat"
 >
   <div className=" ">
     {/* <InvitationThree /> */}
@@ -19,6 +19,7 @@ const ScreenThree = () => {
 
     <VenueSection />
     <MenuSection />
+  
     <ThankYouSection />
   </div>
 </div>
