@@ -4,7 +4,7 @@ export default function MenuSection() {
   const menuImages = [
     "/assets/punamiya/House of Punamiya menu card ( From the Bar )-01.jpg",
     "/assets/punamiya/House of Punamiya menu card ( From the cafe)-01.jpg",
-    "/assets/punamiya/House of Punamiya menu card ( From the kitchen )-01.jpg",
+    "/assets/punamiya/House of Punamiya menu card 08-01.jpg",
   ];
 
   return (

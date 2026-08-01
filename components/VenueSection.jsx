@@ -1,3 +1,4 @@
+import { greatVibes } from "@/font";
 import SectionHeading from "./SectionHeading";
 
 
@@ -5,13 +6,21 @@ export default function VenueSection() {
   const event = {
     venue: "Crafted for the Inner Circle",
     address:
-      "123 Luxury Avenue, Marine Drive, Mumbai, Maharashtra 400001",
+      "1301/1302/1402, Imperial Residency, Gulmohar Cross Road No 12 , Juhu, Mumbai,Maharashtra india",
     time: "Thursday, August 13 • 3:00 PM onwards",
     venueDescription:
-      "Step into an evening of timeless elegance, exquisite dining, and unforgettable celebrations amidst an ambiance crafted for cherished memories.",
+      "True luxury is found in time shared with those who matter most.",
     mapsUrl: "https://maps.google.com",
   };
-
+// Pallavi Punamiya 
+// 1301/1302/1402,Imperial Residency,Gulmohar Cross Road No 12 
+// Juhu
+// Mumbai 400049
+// Maharashtra
+// India
+// 13th August ( Thursday )
+// Timing -3pm 
+// High tea
   const media = {
     venueImage: "/assets/punamiya/venue.jpg",
   };
@@ -45,15 +54,15 @@ export default function VenueSection() {
               {event.venue}
             </h3>
 
-            <p className="font-body mt-3 text-sm text-chocolate/70 sm:text-base">
+            <p className="font-body mt-5 text-sm text-chocolate/70 sm:text-base">
               {event.address}
             </p>
 
-            <p className="font-body mt-1 text-sm text-chocolate/70 sm:text-base">
+            <p className="font-body mt-4 text-sm text-chocolate/70 sm:text-base">
               {event.time}
             </p>
 
-            <p className="font-body mx-auto mt-5 max-w-md text-sm leading-relaxed text-chocolate/65 italic sm:text-base">
+            <p className={`${greatVibes.className} mt-4 text-2xl md:text-3xl text-[#8D440D]`}>
               {event.venueDescription}
             </p>
 

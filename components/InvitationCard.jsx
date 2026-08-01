@@ -50,11 +50,11 @@ export default function InvitationCard() {
         <img
           src={brand.logo}
           alt={brand.logoAlt}
-          className="mx-auto h-20 object-contain opacity-80"
+          className="mx-auto h-30 object-contain opacity-80"
         />
 
         {/* Small Heading */}
-        <p
+        {/* <p
           className="mt-6 uppercase tracking-[0.45em] text-xs"
           style={{
             fontFamily: "Cormorant Garamond",
@@ -62,7 +62,7 @@ export default function InvitationCard() {
           }}
         >
           {event.birthdayTitle}
-        </p>
+        </p> */}
 
         {/* Guest */}
         <p
