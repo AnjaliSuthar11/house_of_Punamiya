@@ -1,3 +1,4 @@
+import FlipCard from "./FlipCard";
 import ScratchCard from "./ScratchCard";
 
 export default function MenuSection() {
@@ -6,26 +7,44 @@ export default function MenuSection() {
     "/assets/punamiya/House of Punamiya menu card ( From the cafe)-01.jpg",
     "/assets/punamiya/House of Punamiya menu card 08-01.jpg",
   ];
+  const cards = [
+    {
+      front: "/assets/punamiya/House of Punamiya logo-01.jpg",
+      back: "/assets/punamiya/House of Punamiya menu card ( From the Bar )-01.jpg",
+    },
+    {
+      front: "/assets/punamiya/House of Punamiya logo-01.jpg",
+      back: "/assets/punamiya/House of Punamiya menu card ( From the cafe)-01.jpg",
+    },
+    {
+      front: "/assets/punamiya/House of Punamiya logo-01.jpg",
+      back: "/assets/punamiya/House of Punamiya menu card 08-01.jpg",
+    },
+  ];
+
 
   return (
-    <section
-      id="menu"
-      className=" md:py-40 "
-    >
+  
+      
+
+
+    <section id="menu" className="md:py-40">
+
+     
       {/* Heading */}
       <div className="text-center">
-        <p
+        {/* <p
           className="uppercase tracking-[0.5em] text-lg text-[#8D440D]"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
           Culinary Experience
-        </p>
+        </p> */}
 
         <h2
           className="mt-3 text-2xl md:text-3xl uppercase text-[#8D440D]"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
-         An Afternoon Curated for the Inner Circle
+           Culinary Experience
 
         </h2>
 
@@ -36,25 +55,18 @@ export default function MenuSection() {
 </div>
       </div>
 
-      {/* Menu Images */}
-      <div className="flex justify-center items-center gap-10 pt-15 flex-col md:flex-row ">
-        {menuImages.map((image, index) => (
-          <div
+      <div className="flex justify-center items-center gap-10 pt-16 flex-col md:flex-row">
+        {cards.map((card, index) => (
+          <FlipCard
             key={index}
-            className="px-10 "
-          >
-            
-
-           
-            <img
-              src={image}
-              alt={`Menu ${index + 1}`}
-              className="w-full h-full object-conatin transition-transform duration-500 group-hover:scale-105 cursor-pointer"
-            />
-             
-          </div>
+            frontImage={card.front}
+            backImage={card.back}
+            delay={index * 350}
+          />
         ))}
       </div>
+
     </section>
   );
 }
+    

@@ -10,7 +10,7 @@ import InvitationThree from './InvitationThree'
 const ScreenThree = () => {
   return (
    <div
-  className="relative bg-[url('/mobile_bg(1).png')] bg-cover  bg-no-repeat"
+  className="relative bg-[url('/BG.jpg')] bg-cover  bg-no-repeat"
 >
   <div className=" ">
     {/* <InvitationThree /> */}

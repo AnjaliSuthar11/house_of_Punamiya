@@ -26,11 +26,30 @@ export default function VenueSection() {
   };
 
   return (
-    <section  className=" flex flex-col justify-center items-center py-10">
-      <SectionHeading
-        kicker="Thursday • 13 August • 3 PM"
-        title={event.venue}
-      />
+    <section  className=" flex flex-col justify-center items-center py-20">
+
+       <p className="pt-5 tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
+      style={{
+            color: "#8D440D",
+            fontFamily: "Cormorant Garamond, serif",
+          }}>
+    thursday
+      </p>
+       <p className="mt-4 tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
+      style={{
+            color: "#8D440D",
+            fontFamily: "Cormorant Garamond, serif",
+          }}>
+        13 august, 3 pm 
+      </p>
+
+      <h2 className="text-center font-display mt-4 text-2xl tracking-[0.16em] uppercase sm:text-4xl" style={{
+            color: "#8D440D",
+            fontFamily: "Cormorant Garamond, serif",
+            textShadow: "0 2px 8px rgba(0,0,0,.35)",
+          }}>
+   Crafted for the Inner Circle
+      </h2>
      
        {/* Divider */}
          <div className="flex items-center justify-center gap-3">

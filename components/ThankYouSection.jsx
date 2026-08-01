@@ -33,7 +33,7 @@ export default function ThankYouSection() {
 
   {/* Quote Text */}
   <h2
-    className={`${ballet.className} mt-2 text-4xl md:text-6xl text-[#8D440D] leading-relaxed font-bold max-w-3xl`} style={{
+    className={`${ballet.className} mt-2 text-4xl md:text-5xl text-[#8D440D] leading-relaxed font-bold max-w-3xl`} style={{
     color: "#8D440D",
     textShadow: `
       0.4px 0 #8D440D,

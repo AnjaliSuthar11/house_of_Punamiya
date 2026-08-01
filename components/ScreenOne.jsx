@@ -160,7 +160,6 @@ export default function ScreenOne() {
 
           <video
             autoPlay
-            muted
             playsInline
             className=" object-contain"
           >

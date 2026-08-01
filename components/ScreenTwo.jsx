@@ -103,7 +103,7 @@ useEffect(() => {
 >
     <video
       autoPlay
-      muted
+   
       playsInline
       className="w-full h-full object-contain"
       onEnded={() => {
@@ -126,7 +126,7 @@ useEffect(() => {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white animate-bounce"
       >
         <span className="text-xs tracking-[0.4em] uppercase mb-2">
-          Scroll
+        Tap To  Scroll
         </span>
 
         <svg
