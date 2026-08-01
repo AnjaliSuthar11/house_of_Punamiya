@@ -40,9 +40,10 @@ export default function ThankYouSection() {
         >
           Thank you for being a part of our celebration.
           <br />
-          Your presence will make this occasion truly memorable,
+          {/* Your presence will make this occasion truly memorable,
           and we look forward to welcoming you with warmth,
-          elegance, and heartfelt hospitality.
+          elegance, and heartfelt hospitality. */}
+          True luxury is found in time shared with those who matter most.
         </p>
 
         {/* Signature */}
