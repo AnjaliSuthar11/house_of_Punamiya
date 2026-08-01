@@ -26,7 +26,7 @@ export default function VenueSection() {
   };
 
   return (
-    <section id="venue" className="  h-screen flex flex-col justify-center items-center md:px-10 py-24 sm:py-10">
+    <section id="venue" className="  h-screen flex flex-col justify-center items-center md:px-10 px-5 py-24 sm:py-10">
       <SectionHeading
         kicker="Thursday, 13 auguest, 3:00 pm"
         title={event.venue}

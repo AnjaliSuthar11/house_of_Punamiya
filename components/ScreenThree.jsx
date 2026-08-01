@@ -12,7 +12,7 @@ const ScreenThree = () => {
    <div
   className="relative bg-[url('/Background01_compressed.png')] bg-cover bg-center bg-no-repeat"
 >
-  <div className="relative z-10 p-5">
+  <div className=" ">
     {/* <InvitationThree /> */}
     {/* <InvitationCard /> */}
     {/* <NewInvitationCard /> */}
