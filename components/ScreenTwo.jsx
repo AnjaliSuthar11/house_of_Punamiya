@@ -18,13 +18,13 @@ useEffect(() => {
   // Start fading the video after 5 seconds
   const fadeTimer = setTimeout(() => {
     setFadeVideo(true);
-  }, 7000);//62000
+  }, 6200);//6200
 
   // Show ScreenThree after fade animation
   const screenTimer = setTimeout(() => {
     setShowVideo(false);
     setShowScreenThree(true);
-  }, 7500);//7000
+  }, 7000);//7000
 
   return () => {
     clearTimeout(showVideoTimer);
