@@ -94,7 +94,10 @@ useEffect(() => {
             onClick={() => setClicked(true)}
             className="md:w-80 cursor-pointer transition-transform duration-300 hover:scale-105"
           />
-        </div>
+        </div> 
+         <p className=" text-center text-sm tracking-[0.35em] text-champagne/70 uppercase ">
+         Tap to open
+      </p>
 
         {/* ================= BOTTOM ================= */}
         <div className="flex flex-col items-center text-[#8D440D]">

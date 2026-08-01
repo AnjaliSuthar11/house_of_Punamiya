@@ -1,3 +1,5 @@
+import ScratchCard from "./ScratchCard";
+
 export default function MenuSection() {
   const menuImages = [
     "/assets/punamiya/House of Punamiya menu card ( From the Bar )-01.jpg",
@@ -34,17 +36,21 @@ export default function MenuSection() {
       </div>
 
       {/* Menu Images */}
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="flex justify-center items-center gap-10 pt-8 flex-col md:flex-row">
         {menuImages.map((image, index) => (
           <div
             key={index}
-            className="group overflow-hidden rounded-xl shadow-lg border border-[#D6B06A]/30"
+            className=" "
           >
+            <ScratchCard width={360} height={480}>
+
+           
             <img
               src={image}
               alt={`Menu ${index + 1}`}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer"
+              className="w-full h-full object-conatin transition-transform duration-500 group-hover:scale-105 cursor-pointer"
             />
+             </ScratchCard>
           </div>
         ))}
       </div>
