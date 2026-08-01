@@ -42,7 +42,7 @@ useEffect(() => {
 }
   return (
    
-    <div className={`flex h-screen justify-center items-center  bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
+    <div className={`flex py-18 justify-center items-center  bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
    
        {/* Main Content */}
       <div
