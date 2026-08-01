@@ -40,7 +40,7 @@ export default function MenuSection() {
         {menuImages.map((image, index) => (
           <div
             key={index}
-            className=" "
+            className="px-10 "
           >
             <ScratchCard width={360} height={480}>
 

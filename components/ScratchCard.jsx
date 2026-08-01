@@ -6,7 +6,7 @@ export default function ScratchCard({
   children,
   width = 340,
   height = 500,
-  revealPercent = 60,
+  revealPercent = 50,
 }) {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
@@ -94,10 +94,14 @@ const [showGlitter, setShowGlitter] = useState(false);
     erase(x, y);
   };
 
-  const move = (x, y) => {
-    if (!drawing.current) return;
-    erase(x, y);
-  };
+const move = (x, y) => {
+  if (!drawing.current) return;
+
+  erase(x, y);
+
+  // Check reveal continuously
+  checkReveal();
+};
 
   const end = () => {
     drawing.current = false;
