@@ -56,7 +56,7 @@ export default function VenueSection() {
 
             <p  className="mt-8 text-lg leading-8 text-[#6B4B2A]"
           style={{ fontFamily: "Cormorant Garamond, serif" }}>
-              1301/1302/1402, Imperial Residency, Gulmohar Cross Road No 12, <br></br>Juhu, Mumbai, Maharashtra India
+              1301/1302/1402, Imperial Residency, Gulmohar Cross Road No 12, Juhu, Mumbai, Maharashtra India
             </p>
 
           
