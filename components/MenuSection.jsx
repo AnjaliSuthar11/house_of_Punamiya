@@ -36,7 +36,7 @@ export default function MenuSection() {
       </div>
 
       {/* Menu Images */}
-      <div className="flex justify-center items-center gap-10 pt-8 flex-col md:flex-row">
+      <div className="flex justify-center items-center gap-10 pt-8 flex-col md:flex-row px-10">
         {menuImages.map((image, index) => (
           <div
             key={index}
