@@ -1,19 +1,23 @@
 export default function SectionHeading({ kicker, title }) {
   return (
     <header className="reveal text-center">
-      <p className="font-body text-[0.6rem] tracking-[0.55em] text-gold/75 uppercase sm:text-xs">
+      <p className=" text-[0.6rem] tracking-[0.55em]  uppercase font-bold sm:text-xs"
+      style={{
+            color: "#8D440D",
+            fontFamily: "Cormorant Garamond, serif",
+          }}>
         {kicker}
       </p>
+     
 
-      <h2 className="font-display mt-4 text-2xl tracking-[0.16em] text-champagne uppercase sm:text-4xl">
+      <h2 className="font-display mt-4 text-2xl tracking-[0.16em] uppercase sm:text-4xl" style={{
+            color: "#8D440D",
+            fontFamily: "Cormorant Garamond, serif",
+            textShadow: "0 2px 8px rgba(0,0,0,.35)",
+          }}>
         {title}
       </h2>
 
-      <div className="mx-auto mt-5 flex w-40 items-center gap-3">
-        <span className="h-px flex-1 bg-gold/40"></span>
-        <span className="h-1.5 w-1.5 rotate-45 bg-gold/70"></span>
-        <span className="h-px flex-1 bg-gold/40"></span>
-      </div>
     </header>
   );
 }

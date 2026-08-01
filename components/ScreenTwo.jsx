@@ -18,13 +18,13 @@ useEffect(() => {
   // Start fading the video after 5 seconds
   const fadeTimer = setTimeout(() => {
     setFadeVideo(true);
-  }, 6200);//6200
+  }, 10000);//6200
 
   // Show ScreenThree after fade animation
   const screenTimer = setTimeout(() => {
     setShowVideo(false);
     setShowScreenThree(true);
-  }, 7000);//7000
+  }, 11000);//7000
 
   return () => {
     clearTimeout(showVideoTimer);
@@ -42,7 +42,7 @@ useEffect(() => {
 }
   return (
    
-    <div className={`flex justify-center items-center md:p-10 bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
+    <div className={`flex h-screen justify-center items-center md:p-10 bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
    
        {/* Main Content */}
       <div
@@ -92,68 +92,14 @@ useEffect(() => {
             src="/assets/punamiya/NewEnvelope.png"
             alt="Envelope"
             onClick={() => setClicked(true)}
-            className="md:w-80 cursor-pointer transition-transform duration-300 hover:scale-105"
+            className="md:w-90 cursor-pointer transition-transform duration-300 hover:scale-105"
           />
         </div> 
-         <p className=" text-center text-sm tracking-[0.35em] text-champagne/70 uppercase ">
-         Tap to open
+         <p className=" text-center text-xs tracking-[0.25em] text-champagne/70 uppercase ">
+         Tap the Envelope to open 
       </p>
 
-        {/* ================= BOTTOM ================= */}
-        <div className="flex flex-col items-center text-[#8D440D]">
-          <h3
-            className="uppercase text-3xl md:text-5xl lg:text-6xl tracking-[0.2em]"
-            style={{
-              fontFamily: "Cormorant Garamond, serif",
-              textShadow: "0 0 12px rgba(214,176,106,.4)",
-            }}
-          >
-            August 13
-          </h3>
-
-          {/* Time */}
-          <div className="flex items-center gap-4 mt-4">
-            <div className="w-16 md:w-24 h-[1px] bg-gradient-to-r from-transparent via-[#8D440D] to-transparent" />
-
-            <span
-              className="uppercase text-lg md:text-xl tracking-[0.35em]"
-              style={{
-                fontFamily: "Cormorant Garamond, serif",
-              }}
-            >
-              3 PM
-            </span>
-
-            <div className="w-16 md:w-24 h-[1px] bg-gradient-to-r from-transparent via-[#8D440D] to-transparent" />
-          </div>
-
-          {/* Divider */}
-          <div className="flex items-center gap-2 mt-4">
-            <div className="w-12 md:w-20 h-[1px] bg-[#8D440D]" />
-
-            <span className="text-xl animate-pulse">✦</span>
-
-            <div className="w-12 md:w-20 h-[1px] bg-[#8D440D]" />
-          </div>
-
-          <p
-            className="mt-2 italic text-lg md:text-xl"
-            style={{
-              fontFamily: "Cormorant Garamond, serif",
-              color: "#8D440D",
-            }}
-          >
-            Invitation to Follow
-          </p>
-
-          <div className="flex items-center gap-4 mt-2">
-            <div className="w-10 md:w-16 h-[1px] bg-[#8D440D]" />
-
-            <span className="text-lg animate-pulse">✦</span>
-
-            <div className="w-10 md:w-16 h-[1px] bg-[#8D440D]" />
-          </div>
-        </div>
+      
       </div>
        {/* Video */}
       {showVideo && (

@@ -3,7 +3,7 @@ import { greatVibes } from "@/font";
 
 export default function ThankYouSection() {
   return (
-    <footer className="relative overflow-hidden px-6 py-24 bg-[#fdf8f2]">
+    <footer className="relative overflow-hidden px-6 py-24 ">
 
       {/* Background Glow */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
@@ -12,42 +12,42 @@ export default function ThankYouSection() {
 
       <div className="relative z-10 max-w-3xl mx-auto text-center">
 
-        {/* Logo */}
+
+        {/* Heading */}
+       
+   <h2
+  className={`${greatVibes.className} mt-8 text-4xl md:text-5xl text-[#8D440D] `}
+>
+  
+The finest moments are never rushed. They're shared.
+</h2>
+
+  {/* Bottom Divider */}
+        <div className="flex items-center justify-center gap-4 py-10">
+          <div className="w-24 h-px bg-[#8D440D]/30"></div>
+          <span className="text-[#8D440D] text-lg">❦</span>
+          <div className="w-24 h-px bg-[#8D440D]/30"></div>
+        </div>
+ 
+  {/* Logo */}
         <img
           src="/assets/punamiya/Logo3.png"
           alt="House of Punamiya"
-          className="mx-auto h-20 md:h-28 object-contain"
+          className=" mx-auto h-30 md:h-40 object-contain"
         />
 
-        {/* Heading */}
-   <h2
-  className={`${greatVibes.className} mt-8 text-6xl md:text-8xl text-[#8D440D]`}
->
-  Thank You
-</h2>
-
-        {/* Divider */}
-        <div className="flex items-center justify-center gap-4 mt-6">
-          <div className="w-20 h-px bg-[#8D440D]/40"></div>
-          <span className="text-[#8D440D] text-xl">✦</span>
-          <div className="w-20 h-px bg-[#8D440D]/40"></div>
-        </div>
-
+       
         {/* Message */}
-        <p
+        {/* <p
           className="mt-8 text-lg leading-8 text-[#6B4B2A]"
           style={{ fontFamily: "Cormorant Garamond, serif" }}
         >
           Thank you for being a part of our celebration.
-          <br />
-          {/* Your presence will make this occasion truly memorable,
-          and we look forward to welcoming you with warmth,
-          elegance, and heartfelt hospitality. */}
-          True luxury is found in time shared with those who matter most.
-        </p>
+         
+        </p> */}
 
-        {/* Signature */}
-        <p
+     
+        {/* <p
           className="mt-10 uppercase tracking-[0.4em] text-sm"
           style={{
             color: "#8D440D",
@@ -55,9 +55,9 @@ export default function ThankYouSection() {
           }}
         >
           With Love
-        </p>
+        </p> */}
 
-        <h3
+        {/* <h3
           className="mt-3 text-3xl"
           style={{
             color: "#8D440D",
@@ -65,17 +65,12 @@ export default function ThankYouSection() {
           }}
         >
           House of Punamiya
-        </h3>
+        </h3> */}
 
-        {/* Bottom Divider */}
-        <div className="flex items-center justify-center gap-4 mt-10">
-          <div className="w-24 h-px bg-[#8D440D]/30"></div>
-          <span className="text-[#8D440D] text-lg">❦</span>
-          <div className="w-24 h-px bg-[#8D440D]/30"></div>
-        </div>
+       
 
         {/* Footer */}
-        <p
+        {/* <p
           className="mt-8 text-xs uppercase tracking-[0.35em]"
           style={{
             color: "#8D440D",
@@ -83,7 +78,7 @@ export default function ThankYouSection() {
           }}
         >
           House of Punamiya • Intimate Indulgence • August 13
-        </p>
+        </p> */}
 
       </div>
     </footer>

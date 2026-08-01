@@ -10,7 +10,7 @@ export default function MenuSection() {
   return (
     <section
       id="menu"
-      className="px-6 py-20 bg-[#F9F5EF]"
+      className=" py-20 "
     >
       {/* Heading */}
       <div className="text-center">
@@ -28,21 +28,21 @@ export default function MenuSection() {
           Our Menu
         </h2>
 
-        <div className="flex justify-center items-center gap-3 mt-5">
-          <div className="w-20 h-px bg-[#8D440D]" />
-          <span className="text-[#8D440D]">✦</span>
-          <div className="w-20 h-px bg-[#8D440D]" />
+        <div className="flex items-center justify-center gap-4 mt-2">
+          <div className="w-24 h-px bg-[#8D440D]/30"></div>
+          <span className="text-[#8D440D] text-lg">❦</span>
+          <div className="w-24 h-px bg-[#8D440D]/30"></div>
         </div>
       </div>
 
       {/* Menu Images */}
-      <div className="flex justify-center items-center gap-10 pt-8 flex-col md:flex-row px-10">
+      <div className="flex justify-center items-center gap-10 pt-15 flex-col md:flex-row ">
         {menuImages.map((image, index) => (
           <div
             key={index}
             className="px-10 "
           >
-            <ScratchCard width={360} height={480}>
+            
 
            
             <img
@@ -50,7 +50,7 @@ export default function MenuSection() {
               alt={`Menu ${index + 1}`}
               className="w-full h-full object-conatin transition-transform duration-500 group-hover:scale-105 cursor-pointer"
             />
-             </ScratchCard>
+             
           </div>
         ))}
       </div>

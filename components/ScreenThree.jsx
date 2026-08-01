@@ -9,15 +9,19 @@ import InvitationThree from './InvitationThree'
 
 const ScreenThree = () => {
   return (
-    <div className="bg-[linear-gradient(135deg,#F7D7A7_0%,#E7B97D_35%,#C6884F_70%,#A25F2C_100%)] pt-10">
-      <InvitationThree/>
-      {/* <InvitationCard/> */}
-      {/* <NewInvitationCard/> */}
-      <VenueSection/>
-     <MenuSection/>
-  
-     <ThankYouSection/>
-    </div>
+   <div
+  className="relative bg-[url('/Background01_compressed.png')] bg-cover bg-center bg-no-repeat"
+>
+  <div className="relative z-10 p-5">
+    {/* <InvitationThree /> */}
+    {/* <InvitationCard /> */}
+    {/* <NewInvitationCard /> */}
+
+    <VenueSection />
+    <MenuSection />
+    <ThankYouSection />
+  </div>
+</div>
   )
 }
 

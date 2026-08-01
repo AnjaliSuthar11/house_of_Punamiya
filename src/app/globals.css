@@ -106,3 +106,18 @@ body {
 
   animation:glitterBurst 1.6s ease-out forwards;
 }
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* IE/Edge */
+body {
+  -ms-overflow-style: none;
+}
