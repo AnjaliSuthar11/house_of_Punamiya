@@ -26,29 +26,41 @@ export default function VenueSection() {
   };
 
   return (
-    <section  className=" flex flex-col justify-center items-center py-20">
+    <section  className=" flex flex-col justify-center items-center py-15">
 
-       <p className="pt-5 tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
+       <p className="pt-2 tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
       style={{
             color: "#8D440D",
             fontFamily: "Cormorant Garamond, serif",
           }}>
     thursday
       </p>
-       <p className="mt-4 tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
+       <p className="mt-4 tracking-[0.2em] md:tracking-[0.4em]  uppercase font-bold text-sm "
       style={{
             color: "#8D440D",
             fontFamily: "Cormorant Garamond, serif",
           }}>
-        13 august, 3 pm 
+        August 13, 2026  <span>•</span> 3 PM 
       </p>
-
-      <h2 className="text-center font-display mt-4 text-2xl tracking-[0.16em] uppercase sm:text-4xl" style={{
+   {/* Divider */}
+         <div className="flex items-center justify-center gap-3 pt-2">
+  <div className="h-px w-20 bg-[#8D440D]" />
+  <span className="text-[#8D440D] text-xl">✦</span>
+  <div className="h-px w-20 bg-[#8D440D]" />
+</div>
+      <h2 className="text-center font-display mt-2 text-2xl tracking-[0.16em] uppercase sm:text-4xl" style={{
             color: "#8D440D",
             fontFamily: "Cormorant Garamond, serif",
             textShadow: "0 2px 8px rgba(0,0,0,.35)",
           }}>
-   Crafted for the Inner Circle
+   Crafted for <br></br>
+      </h2>
+       <h2 className="pb-2 text-center font-display mt-4 text-2xl tracking-[0.16em] uppercase sm:text-4xl" style={{
+            color: "#8D440D",
+            fontFamily: "Cormorant Garamond, serif",
+            textShadow: "0 2px 8px rgba(0,0,0,.35)",
+          }}>
+  the Inner Circle
       </h2>
      
        {/* Divider */}
