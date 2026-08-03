@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title:"House of Punamiya Invite",
-  description: "",
+  description: "Tap to Reveal",
 };
 
 export default function RootLayout({ children }) {
