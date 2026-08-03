@@ -3,7 +3,7 @@ import { ballet, greatVibes } from "@/font";
 
 export default function ThankYouSection() {
   return (
-    <footer className="relative overflow-hidden px-6 py-24 ">
+    <footer className="relative overflow-hidden px-6 ">
 
       {/* Background Glow */}
      
