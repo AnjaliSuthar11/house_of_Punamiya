@@ -26,7 +26,7 @@ export default function VenueSection() {
   };
 
   return (
-    <section  className=" flex flex-col justify-center items-center py-15">
+    <section  className=" flex flex-col justify-center items-center py-15  ">
 
        <p className="pt-2 tracking-[0.5em] md:tracking-[0.55em]  uppercase font-bold text-sm "
       style={{

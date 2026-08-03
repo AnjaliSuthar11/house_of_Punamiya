@@ -28,7 +28,7 @@ export default function MenuSection() {
       
 
 
-    <section id="menu" className="md:py-40">
+    <section id="menu" className="md:py-40 py-20 ">
 
      
       {/* Heading */}

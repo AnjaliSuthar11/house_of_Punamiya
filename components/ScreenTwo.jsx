@@ -35,7 +35,9 @@ useEffect(() => {
 }
   return (
    
-    <div className={`flex py-18 h-screen justify-center items-center  bg-[url('/Background_for_Web_Invite_01.png')] bg-cover bg-center  transition-all duration-1000`}>
+    <div className={`flex py-18 h-screen justify-center items-center  bg-[#dd844c] bg-[radial-gradient(circle_at_top,#FFF5E8_0%,#E8BE88_40%,#D88D55_70%,#B76836_100%)] bg-cover bg-center  transition-all duration-1000`}>
+      {/* #6B270F */}
+      {/* bg-[url('/Background_for_Web_Invite_01.png')] */}
    
        {/* Main Content */}
       <div
