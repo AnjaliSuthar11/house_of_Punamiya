@@ -10,12 +10,12 @@ import InvitationThree from './InvitationThree'
 const ScreenThree = () => {
   return (
    <div
-  className="relative  bg-cover   bg-no-repeat"
+  className="relative  bg-cover   bg-no-repeat bg-[url('/3rdAugustbg.png')]"
 >
   {/* bg-[url('/BG.jpg')] */}
 
   <div 
-   className="bg-[radial-gradient(circle_at_top,#D88D55_0%,#E8BE88_40%,#D88D55_70%,#E8BE88_100%)]">
+   className="">
     {/* <InvitationThree /> */}
     {/* <InvitationCard /> */}
     {/* <NewInvitationCard /> */}
